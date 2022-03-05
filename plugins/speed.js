@@ -38,7 +38,7 @@ let handler = async (m, { conn }) => {
     }
   })
   let old = performance.now()
-  await m.reply('_Testing speed..._')
+  await m.reply('_Sabar lagi ngetes..._')
   let neww = performance.now()
   let speed = neww - old
   m.reply(`
@@ -53,12 +53,12 @@ Merespon dalam ${speed} millidetik
 
 📱 *Phone Info* :
 ${'```' + `
-🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
+🔋 Battery : ${conn.battery ? `${conn.battery.value}% ${conn.battery.live ? 'Lagi ngecas :v' : '⚡ Discharging'}` : 'Unknown'}
 ${util.format(conn.user.phone)}
 `.trim() + '```'}
 
 💻 *Server Info* :
-RAM: ${format(os.totalmem() - os.freemem())} / ${format(os.totalmem())}
+RAM: ${format(os.totalmem() - os.freemem())} / 64 GB
 
 _NodeJS Memory Usage_
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${format(used[key])}`).join('\n') + '```'}
