@@ -135,8 +135,8 @@ global.reloadHandler = function () {
     conn.off('group-participants-update', conn.onParticipantsUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hai, @user!\nSelamat datang di grup @subject\n\n@desc'
-  conn.bye = 'Selamat tinggal @user!'
+  conn.welcome = 'Halo, @user!\nSelamat datang di grup @subject\n\n@desc'
+  conn.bye = 'Selamat tinggal @user\nSemoga tenang disana!'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
   conn.handler = handler.handler
@@ -243,11 +243,11 @@ async function _quickTest() {
   require('./lib/sticker').support = s
   Object.freeze(global.support)
 
-  if (!s.ffmpeg) conn.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
-  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Stickers may not animated without libwebp on ffmpeg (--enable-ibwebp while compiling ffmpeg)')
-  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Stickers may not work without imagemagick if libwebp on ffmpeg doesnt isntalled (pkg install imagemagick)')
+  if (!s.ffmpeg) conn.logger.warn('Mohon install ffmpeg agar dapat mengirim video (pkg install ffmpeg)')
+  if (s.ffmpeg && !s.ffmpegWebp) conn.logger.warn('Animated stiker mungkin tidak akan bekerja jika tidak menginstall libwebp dalam ffmpeg (--enable-ibwebp while compiling ffmpeg)')
+  if (!s.convert && !s.magick && !s.gm) conn.logger.warn('Sticker mungkin tidak akan bekerja jika imagemagick di libwebp dalam ffmpeg tidak terinstall (pkg install imagemagick)')
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Quick Test Done'))
+  .then(() => conn.logger.info('Quick Test Selesai'))
   .catch(console.error)
