@@ -1,14 +1,11 @@
 let handler = async m => m.reply(`
-╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085895086040]
-│ • Telkomsel [081334177340]
-╰────
+*Donasi.*
+> Telkomsel : 081380674817
+> E - Wallet : 081380674817 (Support Semua + Diutamakan Gopay)
+> Saweria : https:/saweria.co/DinXT
 
-╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/Nurutomo
-│ • https://saweria.co/ariffb
-╰────
-`.trim()) // Tambah sendiri kalo mau
+_Terima Kasih Sebelumnya Bagi Yang Sudah Donasi_ :)
+`.trim()) // jangan lupa edit
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i
