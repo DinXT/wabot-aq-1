@@ -1,9 +1,9 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['6281380674817'] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.owner = ['6281380674817'] // Nomor wa lu 
+global.mods = [] // bisa ngeban tpi g bisa akses fitur owner
+global.prems = [] // premium ga guna serius :v
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -13,7 +13,7 @@ global.APIs = { // API Prefix
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
-global.APIKeys = { // APIKey Here
+global.APIKeys = { // APIKey lu 
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'xzibit123',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
@@ -22,7 +22,7 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-// Sticker WM
+// edit wm stiker
 
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
@@ -46,7 +46,7 @@ global.packname = sticker_name
 global.author = sticker_author
 
 
-global.multiplier = 69 // The higher, The harder levelup
+global.multiplier = 69 // gw saranin diatas 60 klo g tar spam levelup :v
 
 
 let file = require.resolve(__filename)
