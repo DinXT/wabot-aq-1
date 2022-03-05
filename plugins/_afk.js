@@ -4,7 +4,7 @@ module.exports = {
     if (user.afk > -1) {
       m.reply(`
 Kamu berhenti AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
-Selama ${clockString(new Date - user.afk)}
+Selama ${clockString(new Date - user.afk)} Selamat datang kembali !
 `.trim())
       user.afk = -1
       user.afkReason = ''
@@ -19,7 +19,7 @@ Selama ${clockString(new Date - user.afk)}
       m.reply(`
 Jangan tag dia!
 Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
-Selama ${clockString(new Date - afkTime)}
+Selama ${clockString(new Date - afkTime)} Nanti yang di tag marah :v
 `.trim())
     }
     return true
