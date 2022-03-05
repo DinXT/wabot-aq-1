@@ -1,4 +1,4 @@
-console.log('Starting...')
+console.log('Memulai...')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
@@ -9,7 +9,7 @@ CFonts.say('Lightweight\nWhatsApp Bot', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
+CFonts.say(`'DinXT Bot' Recode By DinXT - Script By Nurutomo`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
@@ -47,7 +47,7 @@ function start(file) {
   })
   p.on('exit', code => {
     isRunning = false
-    console.error('Exited with code:', code)
+    console.error('Batal dengan kode:', code)
     if (code === 0) return
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0])
